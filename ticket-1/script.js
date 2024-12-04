@@ -1,3 +1,11 @@
+// Page is unstyled - the "Add" button should be green.
+// - Page is not interactive - clicking "Add" does nothing, even though JavaScript handles interactivity.
+
+// Your task is to investigate and fix the bugs so:
+
+// - Page styling works properly.
+// - Page becomes fully interactive (adding items to list works).
+
 // Get elements from the DOM
 const itemInput = document.getElementById("itemInput");
 const addItemButton = document.getElementById("addItemBtn");
@@ -21,4 +29,5 @@ addItemButton.addEventListener("click", () => {
     // Add event listener to delete button
     deleteButton.addEventListener("click", () => li.remove());
   }
+  console.log(shoppingList);
 });
